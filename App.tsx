@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 
 function Galeria() {
   const [imagenes, setImagenes] = useState([]);
-
   useEffect(() => {
     fetch("https://picsum.photos/v2/list?page=2&limit=25")
       .then((res) => res.json())
@@ -28,6 +27,5 @@ function Galeria() {
     </div>
   );
 }
-
 export default Galeria;
 
